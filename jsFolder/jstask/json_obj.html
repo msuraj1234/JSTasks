@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function code(){
+            let obj = {
+                "frontend":{
+                    "sub":"ReactJs"
+                },
+                "backend":{
+                    "sub": "Python"
+                },
+                "database":{
+                    "sub":"Mysql"
+                }
+            }
+
+            document.write(obj.frontend.sub,'<br>')
+            document.write(obj['backend']['sub'],'<br>')
+            document.write(obj.database.sub)
+        }
+    </script>
+</head>
+<body onload="code()">
+    
+</body>
+</html>

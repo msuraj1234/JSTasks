@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function code(){
+        const person = {id:24,
+        firstname:"Suraj",
+        lastname:"Mazumdar", 
+        fullname: function(){ return this.firstname+" "+this.lastname;}
+    }
+
+        document.write(person.firstname,'<br>',person['lastname'],'<br>')
+        document.write(person.fullname())
+  
+    }
+    </script>
+</head>
+<body onload="code()">
+    
+</body>
+</html>

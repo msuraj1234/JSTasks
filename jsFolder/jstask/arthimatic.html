@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function code(val){
+            let value1 = document.getElementById('val1').value;
+            let value2 = document.getElementById('val2').value;
+            if(val == 'add')
+            document.write(Number(value1)+Number(value2))
+            else if(val == 'mul')
+            document.write(Number(value1)*Number(value2))
+            else if(val == 'sub')
+            document.write(Number(value1)-Number(value2))
+            else if(val == 'div')
+            document.write(Number(value1)/Number(value2))
+            
+        }
+            
+        
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="val1" placeholder="Enter num1">
+        <input type="text" id="val2" placeholder="Enter num1">
+        <button onclick="code()" value="add">add</button>
+        <button onclick="code()" value="mul">mul</button>
+        <button onclick="code()" value="sub">sub</button>
+        <button onclick="code()" value="div">div</button>
+    </form>
+</body>
+</html>

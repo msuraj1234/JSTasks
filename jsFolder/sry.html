@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <div id="json"></div> -->
+    <button onclick="down_csv()">Download CSV</button>
+    <script>
+        // const obj = JSON.parse('{"name":"suraj","id":213}')
+        // const obj2 = JSON.parse('{"students":["Name":"suraj","id":123]}')
+        // var x = document.getElementById('json').innerHTML = obj2.students
+        
+        var csv = [
+            ['javascript','json'],
+            ['javascript','json'],
+            ['javascript','json'],
+            ['javascript','json'],
+            ['javascript','json'],
+        ]
+
+        function down_csv(){
+            var csv_head = 'name,tech\n';
+            csv.forEach(function(row){
+                csv_head += row.join(',');
+                csv_head += "\n";
+            })
+
+            document.writeln(csv_head)
+            
+            var hidden = document.createElement('a')
+            hidden.href = 'data:text/csv;charset=utf-8',+encodeURI(csh_head);
+            hidden.target = '_blank'
+            hidden.download = 'tech.csv'
+            hidden.click()
+        }
+    </script>
+
+    
+</body>
+</html>
+

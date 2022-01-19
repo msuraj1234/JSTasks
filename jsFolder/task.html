@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sayhi()
+        {
+            alert('its to late')
+
+        }
+    </script>
+</head>
+<body>
+    <button onclick="sayhi()">clickme</button>
+    <script>
+        var a = 1;
+         b = 2;
+        [a, b] = [b, a]
+        document.write('a=',a,'b=',b+'<br>')
+
+        var a = 1;
+        b = 2;
+        c = 3;
+        [a, b, c] = [c, a, b]
+        document.write(`a=${a},b=${b},c = ${c}`+'<br>')
+
+        var a = 1;
+        b = 2;
+        c = 3;
+        d = 4;
+        [a, b, c, d] = [c, a, d, b]
+        document.write(`a=${a},b=${b},c = ${c},d=${d}`+'<br>')
+
+        var a = 1;
+         b = 2;
+        temp = a;
+        a = b;
+        b = temp;
+        document.write(`a=${a},b=${b}`+'<br>')
+
+        var a = 1;
+         b = 2;
+         c = 3
+        temp = a;
+        a = b;
+        b = c;
+        c = temp
+        document.write(`a=${a},b=${b},c=${c}`+'<br>')
+
+
+        var a = 1;
+        b = 2;
+        c = 3;
+        d = 4;
+        temp = a;
+        a = b;
+        b = c;
+        c = d;
+        d = temp
+        document.write(`a=${a},b=${b},c=${c},d=${d}`+'<br>')
+
+
+        x = 10;
+        y = x++;
+        document.write(y+'<br>')
+
+
+
+
+        x = 10;
+        y = ++x;
+        document.write(y+'<br>')
+
+
+
+        x = 1
+        y = 0
+
+        1? document.write('Hello'+'<br>'): document.write('Hi'+'<br>')
+        0? document.write('Hello'+'<br>'): document.write('Hi'+'<br>')
+
+
+
+
+        function add()
+        {
+            document.write(100+200,'<br>');
+        }
+        add();
+
+        function add1(num1,num2)
+        {
+            res = num1+num2
+            return res;
+        }
+        res = add1(10,50);
+        document.write(res+'<br>');
+        document.write(add1(100,300),'<br>');
+
+
+
+        function add2(a,b)
+        {
+            resu = a+b
+            return resu
+        }
+        res = add2(90,60)
+        document.write(res+'<br>')
+
+
+        let name_var = (num1,num2) =>
+        {
+            res = num1+num2
+            return res
+        }
+
+        res1 = name_var(100,101)
+        document.write(res1+'<br>')
+
+
+        let name_var1 = () =>
+        {
+            return 'Hello'
+        }
+        document.write(name_var1(),'<br>')
+
+
+        let fun_one=(fno,sno)=>
+        {
+            return fno+sno;
+        }
+        document.write(fun_one(100,90),'<br>')
+
+        let fun_one1=(...arg)=>
+        {
+            document.write(arg);
+
+        }
+        fun_one1('hello','<br>');
+        fun_one1('hello','world','<br>');
+
+        let addd=(...arg)=>
+        {
+            return arg+arg
+        }
+        addd(10,50,'<br>')
+
+        if (0)
+        document.write('hi suraj','<br>')
+        else
+        document.write('hi sandeep','<br>')
+
+        let countries = ['India','America','Japan']
+        for(i in countries)
+        {
+            if(countries[i] == 'India')
+            {
+            document.write('Hello India','<br>')
+            }
+            document.write(countries[i],'<br>')
+        }
+
+        document.write('<br>')
+
+        let ary = [1,2,3]
+        let aryc = [...ary];
+        // alert(JSON.stringify(ary)===JSON.stringify(aryc))
+        // alert(ary ===aryc)
+        ary.push(4);
+        alert(arr)
+        alert(aryc);
+
+        let ojb = {a:1,b:2,c:3}
+        let ojbc = {...ojb}
+
+        alert(JSON.stringify(ojb))
+        alert(JSON.stringify(ojbc))
+
+
+//   ...ary is rest or spred parameter
+
+    </script>
+</body>
+</html>

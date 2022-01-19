@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function verify() {
+            var pas = document.getElementById('pass').value
+            var pas1 = document.getElementById('pass1').value
+            if (pas == "") {
+                document.getElementById('msg').innerHTML = '**Fill the password'
+                return false;
+            }
+            if (pas.length < 2) {
+                document.getElementById('msg').innerHTML = '**password length must be grater than 8'
+                return false;
+            }
+            if (pas == pas1) {
+                document.getElementById('msg').innerHTML = '**password matches'
+                return false;
+            }
+            else {
+                document.getElementById('msg').innerHTML = '**password does not matches'
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="" onsubmit="return verify()">
+
+        <input id="pass" type="password" placeholder="Enter password">
+        <input id="pass1" type="password" placeholder="Confirm password">
+        <span id="msg" style="color: red;"></span>
+        <input type="submit" value="Submit">
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>

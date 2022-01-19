@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        color: aqua;
+    }
+</style>
+<script>
+    var flag = true
+ function code(){
+     var frm = '<form action=""><input type="text" id="str" placeholder="Enter Name"><input type="text" id="str1" placeholder="Enter Age" ><button onclick = "code()">Submit</button></form>'
+if(flag){
+    document.getElementById('para').innerHTML = frm;
+    flag = false
+}
+else{
+    document.getElementById('para').innerHTML = "";
+    flag = true
+}
+ }
+</script>
+<body>
+    <button onclick="code()">Click me</button>
+    <div id="para"></div>
+    
+</body>
+</html>

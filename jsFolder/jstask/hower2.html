@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function code(val){
+        if(val == 'a'){
+            document.getElementById('data').style.background = 'green';
+            document.getElementById('data').style.width = 300+'px';
+            document.getElementById('data').style.height = 300+'px';
+            document.getElementById('data').style.borderRadius = 300+'px';
+        }
+        else{
+            document.getElementById('data').style.background = 'red';
+            document.getElementById('data').style.width = 200+'px';
+            document.getElementById('data').style.height = 200+'px';
+        }
+    }
+</script>
+<body>
+    <div style=" height: 300px; width: 300px; background: rgb(37, 89, 231);" id="data" onmouseup="code('a')" onmousedown="code('o')"></div>
+</body>
+</html>

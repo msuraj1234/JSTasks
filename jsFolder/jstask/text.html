@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function code(){
+        var data = document.getElementById('data').value;
+        if(data.length <= 30){
+            document.getElementById('count').innerHTML = data.length;
+        }
+        else{
+            document.getElementById('count').innerHTML = 'OverFlow';
+        }
+    }
+</script>
+
+<body>
+    <textarea id="data" cols="30" rows="10" onkeypress="code()"></textarea><span id="count"></span>
+</body>
+</html>

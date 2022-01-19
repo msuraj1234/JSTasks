@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function validateForm() {
+  var x = document.forms["myForm"]["name"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+  }
+  var x = document.forms["myForm"]["phone"].value;
+  var y = "[\d]+"
+  if (x == y) {
+    alert("Enter valid Phone number");
+  }
+  var x = document.forms["myForm"]["email"].value;
+  var y = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
+  if (x == y) {
+    alert("Email is not valid");
+  }
+  var x = document.forms["myForm"]["address"].value;
+  if (x == "") {
+    alert("Address must be filled out");
+  }
+}
+</script>
+
+<body>
+    <form action=""  name="myForm"  method="post">
+        <label for="">Name</label>
+        <input type="text" name="name" placeholder="Enter Name" required> <br><br>
+        <label for="">Email</label>
+        <input type="text" name="email" placeholder="Enter Email" required><br><br>
+        <label for="">Phone</label>
+        <input type="text" name="phone" placeholder="Enter phone Number" required><br><br>
+        <label for="">Address</label>
+        <input type="text" name="address" placeholder="Enter Addess" required><br><br>
+        <input type="submit" onclick="validateForm()" value="Submit">
+    </form>
+</body>
+</html>

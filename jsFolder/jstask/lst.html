@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lst = ['India','US','Japan']
+        for(i = 0; i<lst.length; i++)
+        {
+
+            document.write(lst[i],'<br>')
+        }
+        document.write('<br>')
+        document.write('Using forof:','<br>')
+        for(i of lst){
+            document.write(i,'<br>')
+        }
+        document.write('<br>')
+        document.write('Using forin:','<br>')
+        for(i in lst){
+            document.write(lst[i],'<br>')
+        }
+        document.write('<br>')
+        document.write('Push and Pop:','<br>')
+        const arr_one = [10,20,30,40,60]
+        document.write(`[${arr_one}]`,'<br>')
+        // arr_one.push(50)
+        // document.write(`[${arr_one}]`,'<br>')
+        arr_one.pop()
+        document.write(`[${arr_one}]`,'<br>')
+        document.write('<br>')
+        document.write('Slice:','<br>')
+        let arr_two = [10,20,30,40,60]
+        const a1 = arr_two.slice(1,3)
+        document.write(`[${a1}]`,'<br>')
+        document.write('<br>')
+        document.write('Splice:','<br>')
+        let arr_three = ['Banana','Apple','Orange','Mango']
+        const a2 = arr_three.splice(2,1,'Cherry','Kiwi')
+        document.write(`[${arr_three}]`,'<br>')
+        // document.write(`[${a2}]`,'<br>')
+    </script>
+</body>
+</html>
