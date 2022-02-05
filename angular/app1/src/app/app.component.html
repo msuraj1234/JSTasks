@@ -1,0 +1,15 @@
+<a routerLink = 'home'>Home</a> <br>
+
+<a routerLink = 'contact'>ContactUs</a> 
+<router-outlet></router-outlet>
+
+ {{sno}}
+<br>
+
+{{fullName}}
+<br>
+<h1 [innerHtml]="fullName"></h1>
+  <br>
+
+<button [disabled]="!isDisabled" (click)='display()'>Click Me</button> 
+

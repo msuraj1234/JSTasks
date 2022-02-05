@@ -1,0 +1,51 @@
+<!-- <form #userLogin="ngForm" (ngSubmit)="display(userLogin)">
+    <input type="text" name="uname" placeholder="Enter User Name" ngModel /><br/>
+    <input type="password" name="pass" placeholder="Enter Password" ngModel /><br/>
+    <input type="submit" value="Submit">
+</form> -->
+
+
+<div class="container">
+
+    <form #userLogin="ngForm" (ngSubmit)="display(userLogin)">
+        <div class="mb-3">
+            <label for="roll" class="form-label">Roll No:</label>
+            <input type="text" class="form-control" id="roll" placeholder="Enter Roll Number" name="roll" [ngModel]="roll">
+        </div>
+        <div class="mb-3">
+            <label for="username" class="form-label"> Name: </label>
+            <input type="text" class="form-control" id="username" placeholder="Enter Name" name="uname" [ngModel]="uname">
+        </div>
+        <div class="mb-3">
+            <label for="address" class="form-label">Address:</label>
+            <input type="text" class="form-control" id="address" placeholder="Enter Address" name="address" [ngModel]="address">
+        </div>
+        <div class="mb-3">
+            <label for="phno" class="form-label">email: </label>
+            <input type="text" class="form-control" id="phno" placeholder="Enter Phone Number" name="phno" [ngModel]="phno">
+        </div>
+        
+        <div class="form-check">
+            <input class="python" type="checkbox" value="python" name="python" id="python" [ngModel]="python">
+            <label class="python" for="python">
+              Python
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="js" type="checkbox" value="js" id="js" name="js" [ngModel]="js">
+            <label class="js" for="js">
+              JavaScript
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="angular" type="checkbox" value="angular" id="angular" name="angular" [ngModel]="angular">
+            <label class="angular" for="angular">
+                Angular
+            </label>
+          </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+{{uname}} <br> {{roll}}  <br> {{phno}} <br> {{address}} <br> {{python}} <br>{{js}} <br> {{angular}} <br>
